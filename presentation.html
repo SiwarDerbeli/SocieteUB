@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <title>UB</title>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+</head>
+
+<body class="flex" style="background-color: #838A8C;">
+<div x-data="{show : false}" class=" hidden md:w-1/6 md:text-white md:p-4 md:flex  md:flex-col">
+    <div class="mb-2" x-on:click="show = !show ">
+        <svg x-show="!show" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cursor-pointer w-6 h-6" style="color: #FF6F4A">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+          </svg>
+          
+      </div>
+      <div x-show="show" class="fixed" >
+<a href="#sb"> <h1 class="rounded p-2 mb-1 ml-1 bg-stone-50 text-slate-700 hover:text-stone-50 hover:bg-slate-700" ><span style="color:#FF6F4A">&bull;  </span>Sociétés BARHOUMI</h1></a>
+<a href="#dg"> <h1 class="rounded p-2 mb-1 ml-1 bg-stone-50 text-slate-700 hover:text-stone-50 hover:bg-slate-700" ><span style="color:#FF6F4A">&bull;  </span>Données générales</h1></a>
+<a href="#d"> <h1 class="rounded p-2 mb-1 ml-1 bg-stone-50 text-slate-700 hover:text-stone-50 hover:bg-slate-700" ><span style="color:#FF6F4A">&bull;  </span>Dirigeants</h1></a>
+<a href="#u"> <h1 class="rounded p-2 mb-1 ml-1 bg-stone-50 text-slate-700 hover:text-stone-50 hover:bg-slate-700" ><span style="color:#FF6F4A">&bull;  </span>Usine</h1></a>
+<a href="#l"> <h1 class="rounded p-2 mb-1 ml-1 bg-stone-50 text-slate-700 hover:text-stone-50 hover:bg-slate-700" ><span style="color:#FF6F4A">&bull;  </span>Laboratoire</h1></a>
+<a href="#c"> <h1 class="rounded p-2 mb-1 ml-1 bg-stone-50 text-slate-700 hover:text-stone-50 hover:bg-slate-700" ><span style="color:#FF6F4A">&bull;  </span>Carrière</h1></a>
+<a href="#s"> <h1 class="rounded p-2 mb-1 ml-1 bg-stone-50 text-slate-700 hover:text-stone-50 hover:bg-slate-700" ><span style="color:#FF6F4A">&bull;  </span>Stockage humide</h1></a>
+       
+      </div>
+</div>
+
+<div class=" w-full md:w-8/12 " style="background-color: #F3EFEC;">
+    <div class="flex  flex-col pl-6 lg:flex-row lg:items-center lg:justify-between lg:px-14 py-4   "  style="color: #1b3849; ">
+        <div><h1  class="font-bold text-lg " style="font-family:Quicksand ;"> Univers de la blancheur</h1></div>
+        <div class="flex  flex-col p-8 lg:flex-row lg:items-center  lg:space-x-8">
+           <a href="index.html"> <h1  class="hover:text-orange-500 text-lg" style="font-family:Quicksand ;">Accueil</h1></a>
+           <a href="presentation.html"> <h1  class="hover:text-orange-500 text-lg" style="font-family:Quicksand ;">Présentation de la société</h1></a>
+           <a href="prd.html"> <h1  class="hover:text-orange-500 text-lg" style="font-family:Quicksand ;">Produits</h1></a>
+        </div>
+        <div>
+            <img src="images/logo.png" class="rounded-full w-12 h-12">
+        </div>
+
+    </div>
+
+    <div class="flex flex-col px-14 py-20 items-center" style="color: #1B3849;">
+       <div class=" relative"> 
+        <img src="images/bg2.png" alt="">
+          <div class="space-y-6 lg:absolute lg:top-0 lg:left-0 flex  flex-col w-full    ">
+           <h1 class="text-2xl font-semibold">Présentation générale de la société </h1>
+           <h1 class="text-6xl font-bold " style="color:#FF6F4A">Univers de la Blancheur</h1>
+        </div>
+       
+           
+        </div>
+    </div>
+
+ <hr class="h-8 " style="color: #1B3849;"> 
+ 
+ <div id="sb" class="flex flex-col p-14  space-y-8" style="color: #1B3849;">
+    <h1 class="text-3xl  "><span style="color:#FF6F4A;">&bull;</span> Sociétés BARHOUMI</h1>
+    <p>Société UB appartient au groupe de Sociétés BARHOUMI qui est composé de 4 sociétés :</p>
+    <div class="flex flex-col space-y-10 lg:space-y-0 lg:flex-row  lg:justify-center lg:space-x-16 ">
+<div class="w-72" >
+    <div class="flex -ml-2 space-x-1  ">
+        <svg style="color:#FF6F4A" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+          </svg>
+    <h1 class="mb-4 font-semibold">Société Univers de la Blancheur</h1>
+    </div>
+    <p>Crée en Janvier 1996 sous le nom du <abbr title="Blanc Mineraux de Tunisie">BMT</abbr>, en 2020 Groupe Barhoumi a acheté les actions BMT sous le nom de Univers de la Blancheur<br>
+        Capital 181 000 TND<br>
+        Production et commercialisation de Carbonate de Calcium micronisé</p>
+</div>
+<div class="w-72">
+    <div class="flex -ml-2 space-x-1  ">
+        <svg style="color:#FF6F4A" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+          </svg>
+    <h1 class="mb-4 font-semibold">Société ECONOBRAS</h1>
+    </div>
+    <p>Créée en Juillet 2015<br>
+        Capital 102 000 TND<br>
+        Collecte et recyclage des déchets non métalliques</p>
+</div>
+    </div>
+    <div class="flex flex-col space-y-10 lg:space-y-0 lg:flex-row  lg:justify-center lg:space-x-16 ">
+<div class="w-72">
+    <div class="flex -ml-2 space-x-1  ">
+        <svg style="color:#FF6F4A" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+          </svg>
+          
+    <h1 class="mb-4 font-semibold">Société MEGISSERIE ASSABASSEB</h1>
+    </div>
+    <p>Créée en Avril 2013<br>
+        Capital 1 426 000 TND<br>
+        Préparation et tannage du cuir</p>
+</div>
+<div class="w-72">
+    <div class="flex -ml-2 space-x-1  ">
+        <svg style="color:#FF6F4A" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+          </svg>
+    <h1 class="mb-4 font-semibold">Société Agricole</h1>
+    </div>
+    <p>Créée en 2016<br>
+        125 Ha</p>
+</div>        
+    </div>
+ </div>
+ 
+ <hr class="h-8 " style="color: #1B3849;"> 
+
+ <div id="dg" class="flex flex-col p-14  space-y-14" style="color: #1B3849;">
+    <h1 class="text-3xl  "><span style="color:#FF6F4A;">&bull;</span> Données générales</h1> 
+    <div class="flex flex-col space-y-10 lg:space-y-0  lg:flex-row lg:mx-4  lg:justify-between">
+        <div class="h-sm text-center  lg:w-60 lg:h-40 rounded p-4 drop-shadow-2xl hover:animate-bounce hover:text-white " style="background-color: #FF6F4A; ">
+            <h1 class="font-bold">Nom :</h1>
+            <h1>Société Univers de Blancheur "UB"</h1>
+        </div>
+        <div class="h-sm text-center  lg:w-60 lg:h-40 rounded p-4 drop-shadow-2xl hover:animate-bounce hover:text-white " style="background-color: #FF6F4A; ">
+            <h1 class="font-bold">Forme juridique :</h1>
+            <h1>Société <abbr title="Société à Responsabilité Limitée">SARL</abbr></h1>
+        </div>
+        <div class="h-sm text-center  lg:w-60 lg:h-40 rounded p-4 drop-shadow-2xl hover:animate-bounce hover:text-white " style="background-color: #FF6F4A; ">
+            <h1 class="font-bold">Date de création :</h1>
+            <h1>Janvier 1996/Décembre 2020</h1>
+        </div>
+    </div>
+
+    <div class="flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:mx-4  lg:justify-between">
+        <div class="h-sm text-center  lg:w-60 lg:h-40 rounded p-4 drop-shadow-2xl hover:animate-bounce hover:text-white" style="background-color: #FF6F4A; ">
+            <h1 class="font-bold">Capital :</h1>
+            <h1>Le capital de la société Univers de blancheur est de 181 000 TND.</h1>
+        </div>
+        <div class="h-sm text-center  lg:w-60 lg:h-40 rounded p-4 drop-shadow-2xl hover:animate-bounce hover:text-white " style="background-color: #FF6F4A; ">
+            <h1 class="font-bold">Secteur d'activité :</h1>
+            <h1>Production et commercialisation de Carbonate de Calcium micronisé</h1>
+        </div>
+        <div class="h-sm text-center  lg:w-60 lg:h-40 rounded p-4 drop-shadow-2xl hover:animate-bounce hover:text-white " style="background-color: #FF6F4A; ">
+            <h1 class="font-bold">Effectif :</h1>
+            <h1>Entre 50 – 60 personnes</h1>
+        </div>
+    </div>
+   
+ </div>
+
+ <hr class="h-8 " style="color: #1B3849;"> 
+
+ <div id="d" class="flex flex-col p-14  space-y-14 " style="color: #1B3849;">
+
+    <h1 class="text-3xl  "><span style="color:#FF6F4A;">&bull;</span> Dirigeants</h1> 
+    <div class="space-y-8">
+        <div class="space-y-4">
+            <div class="flex items-center space-x-4">
+            <img class="rounded-full" src="images/directeur.jpg" width="100px " height="100px" >
+            <div >
+            <h1 class="font-semibold text-lg" >Mr. Barhoumi Abderrahim</h1>
+            <h1 class="bg-white px-2 py-1 w-fit rounded" >Directeur général</h1></div>
+            </div>
+            <p class="ml-32">M. Barhoumi Abderrahim est actionnaire de 25% dans un groupe des sociétés opérant dans la filière de dattes . Ce groupe de sociétés intégré est intitulé « Groupe AgroGreen » et composé de 4 sociétés : INTAC, PALMINVEST, SALS, HARMONIE.</p>
+        </div>
+
+        <div class="space-y-4">
+            <div class="flex items-center space-x-4">
+            <img class="rounded-full" src="images/ingenieur.jpg" width="100px " height="100px" >
+            <div >
+            <h1 class="font-semibold text-lg">Mr. Derbali Taoufik</h1>
+            <h1 class="bg-white px-2 py-1 w-fit rounded" >Directeur d'usine</h1></div>
+            </div>
+            <p class="ml-32">M. Derbali Taoufik est un technicien supérieur en Génie Electrique avec plus de 20 ans d'expérience en gestion de production.</p>
+        </div>
+    </div>
+
+ </div>
+
+ <hr class="h-8 " style="color: #1B3849;">
+
+<div class="flex flex-col p-14  space-y-14" style="color: #1B3849;">
+    <h1 class="text-3xl  " id="u"><span style="color:#FF6F4A;">&bull;</span> Faisons une tour dans l'usine</h1>
+   
+    <div class="flex flex-col lg:flex-row lg:space-x-4 lg:items-center">
+        
+        <div class="relative w-fit ">
+        <video class=" blur-sm hover:blur-none rounded" width="275" height="100" controls muted poster="images/lab2.png" >
+            <source src="images/lab.mp4" type="video/mp4">
+        </video> 
+        <a href="#l"> <h1 class="font-semibold text-lg absolute top-0 left-0 w-full rounded p-2" style="color:#F3EFEC;background-color:#FF6F4A;">Laboratoire</h1></a>
+                 </div>
+          
+            <div class="relative w-fit ">
+                <video class=" blur-sm hover:blur-none rounded " width="275" height="100" controls muted poster="images/concasseur.jpg" >
+                    <source src="movie.mp4" type="video/mp4">
+                </video> 
+                <a href="#c"> <h1 class="font-semibold text-lg absolute top-0 left-0 w-full rounded p-2" style="color:#F3EFEC;background-color:#FF6F4A;">Carrière</h1></a>
+          </div>
+
+          <div class="relative w-fit ">
+            <video class=" blur-sm hover:blur-none rounded" width="275" height="100" controls muted poster="images/c2.jpg" >
+                <source src="movie.mp4" type="video/mp4">
+            </video> 
+            <a href="#s"> <h1 class="font-semibold text-lg absolute top-0 left-0 w-full rounded p-2" style="color:#F3EFEC;background-color:#FF6F4A;">Stockage humide</h1></a>
+             </div>
+
+            
+         
+
+    
+            </div>
+
+    <hr class="h-8 " style="color: #1B3849;"> 
+
+    <div class="space-y-2">
+        <p class="font-semibold text-lg ml-8 mb-6">L'usine est composée de :</p>
+        <div>
+        
+<div class="flex space-x-2 mb-2">
+    <div><svg style="color: #FF6F4A;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+  <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+</svg></div>
+<h1>Une première ligne de broyage de carbonate de calcium micronisé en poudre (Voie Sèche 1) d’une capacité annuelle de 30 000 tonnes destinée pour l’industrie de peinture, papèterie...</h1>
+</div>
+<div class="flex space-x-2 mb-2">
+    <div><svg style="color: #FF6F4A;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+  <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+</svg></div>
+<h1>Une deuxième ligne de broyage de carbonate de calcium micronisé en poudre (Voie Sèche 2) d’une capacité annuelle de 40 000 tonnes destinée pour l’industrie de peinture.</h1>
+</div>
+<div class="flex space-x-2 mb-2">
+    <div><svg style="color: #FF6F4A;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+  <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+</svg></div>
+<h1>Une ligne de broyage et de traitement de carbonate de calcium micronisé en poudre (Voie Enrobé) d’une capacité annuelle de 15 000 tonnes destinée pour l’industrie de plastique et des câbleries.</h1>
+</div>
+<div class="flex space-x-2 mb-2">
+    <div><svg style="color: #FF6F4A;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+  <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+</svg></div>
+<h1>Une ligne de broyage humide de carbonate de calcium micronisé (Voie Humide) d’une capacité globale de 30 000 tonnes de slurry de carbonate destinée aux industries du papier et peinture.</h1>
+</div>
+    <div class="flex space-x-2 mb-2">
+               <div> <svg style="color: #FF6F4A;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+            </svg></div>
+            <h1>Une ligne de concassage secondaire 25t/h.</h1>
+            </div>
+        </div>
+    </div>
+
+    <hr class="h-8 " style="color: #1B3849;"> 
+
+<div  id="l" class="space-y-6">
+    <div class="-mx-14 relative ">
+        <img class="w-full h-48  drop-shadow-2xl opacity-70 " src="images/lab1.png" alt="">
+        <h1 class="text-5xl font-semibold ml-16 mb-2 absolute bottom-0 left-0 " style="color:#1B3849; font-family: Quicksand;">Laboratoire</h1>
+    </div>
+    <div>
+        <p>notre société
+            dispose d’un laboratoire d’analyse et de contrôle lui permettant d’assurer la qualité de ses produits, le respect de leurs spécifications techniques et la recherche et le développement de nouveau produit. Le laboratoire est équipé par une panoplie d’instruments et d’équipements à la pointe de la technologie, il s’agit notamment de :</p>
+    </div>
+
+    <div class="space-y-4 flex flex-col lg:flex-row space-x-8">
+        <div>
+        <div class="flex space-x-2 items-center">
+           <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8" style="color: #1B3849;">
+                <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z" clip-rule="evenodd" />
+              </svg></div>
+              <p>Deux malvernes pour la mesure de la finesse</p>
+              
+        </div>
+        <div class="flex space-x-2 items-center">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8" style="color: #1B3849;">
+                 <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z" clip-rule="evenodd" />
+               </svg></div>
+               <p>Deux viscosimètres</p>
+               
+         </div>
+         <div class="flex space-x-2 items-center">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8" style="color: #1B3849;">
+                 <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z" clip-rule="evenodd" />
+               </svg></div>
+               <p>Un spectromètre</p>
+               
+         </div>
+         <div class="flex space-x-2 items-center">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8" style="color: #1B3849;">
+                 <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z" clip-rule="evenodd" />
+               </svg></div>
+               <p>Deux Elrepho</p>
+               
+         </div>
+         <div>
+         <div class="flex space-x-2 items-center">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8" style="color: #1B3849;">
+                 <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z" clip-rule="evenodd" />
+               </svg></div>
+               <p>Dessiccateur (déshydratant)</p>
+               
+         </div>
+         <div class="flex space-x-2 items-center">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8" style="color: #1B3849;">
+                 <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z" clip-rule="evenodd" />
+               </svg></div>
+               <p>PH-mètre</p>
+               
+         </div>
+         <div class="flex space-x-2 items-center">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8" style="color: #1B3849;">
+                 <path fill-rule="evenodd" d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z" clip-rule="evenodd" />
+               </svg></div>
+               <p>Un Granulométries Laser Master</p>
+               
+         </div></div>
+    </div>
+</div>
+
+
+<hr class="h-8 " style="color: #1B3849;"> 
+
+<div  id="c" class="space-y-6">
+    <div class="-mx-14 relative ">
+        <img class="w-full h-48  drop-shadow-2xl opacity-70 " src="images/djebel.jpg" alt="">
+        <h1 class="text-5xl font-semibold ml-16 mb-2 absolute bottom-0 left-0 " style="color:#1B3849; font-family: Quicksand;">Carrière</h1>
+    </div>
+    <div>
+        <p>Les carrière sont située au <span style="color: #FF6F4A;">Djebel de Feriana</span>  |  <span style="color: #FF6F4A;">43 ha</span>  et <span style="color: #FF6F4A;">120 ha</span>. <br>
+            <span style="color: #FF6F4A;">UNIVERS DE LA BLANCHEUR</span>  dispose de gisements miniers de carbonate de calcium <span style="color: #FF6F4A;">(calcaire)</span> d’une pureté élevée <span style="color: #FF6F4A;">(> 95 %)</span>, que cette entité exploite pour l’élaboration de toute sa gamme de produits. Le contrôle exhaustif de cette matière première depuis le moment de sa prospection assure une importante richesse dans toute la chaîne de produits dérivés. L’exploitation de la carrière est assurée par une ligne de concassage primaire à mâchoires et de criblage d’une capacité annuelle<span style="color: #FF6F4A;"> 500 000 tonnes</span> .</p>
+    </div>
+
+   
+
+</div>
+
+<hr class="h-8 " style="color: #1B3849;"> 
+
+<div  id="s" class="space-y-6">
+    <div class="-mx-14 relative ">
+        <img class="w-full h-48  drop-shadow-2xl opacity-70 " src="images/c5.png" alt="">
+        <h1 class="text-5xl font-semibold ml-16 mb-2 absolute bottom-0 left-0 " style="color:#1B3849; font-family: Quicksand;">Stockage humide</h1>
+    </div>
+    <div>
+        <p>U.B dispose pour le stockage du carbonate de calcium en slurry de 07 cuves en inox d’une capacité totale de 525 M3 répartie comme suit :</p>
+    </div>
+    <div class="space-y-3">
+        <h1 class="px-2 p-y-1 lg:w-1/2 rounded-lg" style="background-color: #FF6F4A; color: #F3EFEC;">03 cuves test de 25 m3 chacune soit 75 m3.</h1>
+        <h1 class="px-2 p-y-1 lg:w-1/2 rounded-lg" style="background-color: #FF6F4A; color: #F3EFEC;">02 cuves Stock de 75 m3 chacune soit 150 m3.</h1>
+        <h1 class="px-2 p-y-1 lg:w-1/2 rounded-lg" style="background-color: #FF6F4A; color: #F3EFEC;">02 cuves Stock de 150 m3 chacune soit 300 m3.</h1>
+    </div>
+
+   
+
+</div></div>
+
+<hr class="h-8 " style="color: #1B3849;"> 
+
+<div class="flex flex-col space-y-10 lg:space-y-0 lg:flex-row p-14  lg:justify-between" style="color: #1B3849;font-family: Quicksand;">
+    <div class="w-full lg:w-2/5 space-y-4 ">
+       <div class="flex space-x-4 items-center"> 
+        <img src="images/logo.png" class="rounded-full w-12 h-12"> 
+       <h1 class="font-bold text-xl">Univers de la Blancheur</h1>
+        </div>
+       <p class=" ml-16">L’usine de <span style="color:#FF6F4A"> U.B</span> est implantée dans la zone industrielle de <span style="color:#FF6F4A">Feriana (Gouvernorat de Kasserine)</span>, son objet est la production de carbonate de calcium micronisé.</p>
+    </div>
+    <div class="flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:space-x-16">
+        <div class="space-y-4">
+            <h1 class="text-md font-semibold" style="color: #FF6F4A;">Contactez-nous</h1>
+            <div class="flex flex-col">
+                <div class="flex items-center space-x-1 ">
+                    <div class="p-1 w-sm h-sm rounded-full" style="background-color:  #FF6F4A;">
+                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg></div>
+                    <h1> Route ZI Feriana, Kasserine</h1> 
+                </div>
+                <div >
+                    <iframe width="150px" height="150px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.8770416813077!2d8.530415714535362!3d34.93462058037507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f901ca610cedb7%3A0xb16374508dbccfb3!2sSTE%20BMT!5e0!3m2!1sfr!2stn!4v1661433418709!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="flex items-center space-x-1 ">
+                    <div class="p-1 w-sm h-sm rounded-full" style="background-color:  #FF6F4A;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                          </svg>
+                          </div>
+                    <h1> 24735107  |  58797899</h1> 
+                </div>
+             
+            </div>
+            <div class="flex flex-col">
+                <div class="flex items-center space-x-1 ">
+                    <div class="p-1 w-sm h-sm rounded-full" style="background-color:  #FF6F4A;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                          </svg>
+                          </div>
+                    <h1> universdelablancheur@gmail.com</h1> 
+                </div>
+                
+            </div>
+        </div>
+        <div class="space-y-4">
+            <h1 class="text-md font-semibold " style="color: #FF6F4A;">Documents utiles</h1>
+            <div class="flex flex-col ">
+                <a class="hover:text-orange-500" href="FICHE TECHNIQUE  univers  D DT 2022.pdf">FICHE TECHNIQUE 1</a>
+                <a class="hover:text-orange-500" href="FICHE TECHNIQUE  2021 2 (1) (1) (1).pdf">FICHE TECHNIQUE 2</a>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+
+</body>
